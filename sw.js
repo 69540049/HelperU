@@ -1,4 +1,4 @@
-const CACHE_NAME="thai-exam-assistant-v3";
+const CACHE_NAME="thai-exam-assistant-v4";
 const APP_SHELL=["./","./index.html","./manifest.webmanifest","./assets/app-icon-192.png","./assets/app-icon-512.png","./assets/apple-touch-icon.png","./assets/favicon-32.png","./assets/favicon.ico"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(APP_SHELL)));self.skipWaiting()});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))));self.clients.claim()});

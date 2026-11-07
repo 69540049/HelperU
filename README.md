@@ -1,21 +1,17 @@
-# Thai Exam Camera Assistant v2
+# Thai Exam Camera Assistant V3.0 — Free Edition
 
-## Deploy to GitHub Pages
-1. Extract this ZIP.
-2. Upload **all contents** of this folder to the root of your GitHub Pages repository (or preserve the folder structure).
-3. Enable GitHub Pages in repository Settings → Pages.
-4. Open the HTTPS GitHub Pages URL on your phone.
+- ไม่ใช้ OpenAI API และไม่ต้องใช้ API Key
+- ไม่เสียค่าเรียก API
+- เปิดกล้อง/เลือกรูป และ OCR ภาษาไทยด้วย Tesseract.js
+- อ่าน PDF ด้วย PDF.js และ OCR หน้าเอกสารสแกน
+- ค้นหาหน้าเนื้อหาที่เกี่ยวข้องและจัดอันดับตัวเลือกด้วยการจับคู่ข้อความ
+- แสดงคะแนนความเกี่ยวข้องและข้อความหลักฐานพร้อมเลขหน้า
+- รองรับ PWA สำหรับติดตั้งบนมือถือ
 
-## Features
-- New app icon and branded mobile header
-- Favicon and iPhone home-screen icon
-- PWA manifest and install prompt (supported browsers)
-- Service worker caches the app shell and icon files
-- Existing PDF import/OCR, camera capture, question OCR, and document-grounded AI answer flow
+## Deploy
+แตก ZIP แล้วอัปโหลดไฟล์ทั้งหมดภายในไปยัง root ของ GitHub Pages repository จากนั้นเปิด URL แบบ HTTPS
 
-## Important
-- Camera access requires HTTPS or localhost.
-- PDF.js and Tesseract.js are loaded from CDNs; initial use requires internet.
-- AI analysis requires an OpenAI API key and internet. The key is entered in the page and is not stored in local storage.
-- Do not publish a file containing a real API key. This bundle contains no API key.
-- The service worker caches the app shell, not the AI service or the PDF you select.
+## ข้อจำกัด
+ระบบค้นหาเป็น text matching ภายใน browser ไม่ใช่ AI เชิงเหตุผล อาจจัดอันดับผิดในโจทย์ที่ต้องตีความ/อนุมาน โปรดตรวจ OCR และหลักฐานทุกครั้ง
+PDF.js และ Tesseract.js โหลดจาก CDN จึงต้องใช้อินเทอร์เน็ตในการเริ่มใช้งานครั้งแรก
+Service worker แคช app shell เท่านั้น ไม่ได้แคช PDF ที่เลือก

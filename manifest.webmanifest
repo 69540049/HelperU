@@ -1,8 +1,7 @@
 {
-  "id": "./",
-  "name": "ผู้ช่วยสอบภาษาไทย | Thai Exam Camera Assistant",
+  "name": "ผู้ช่วยสอบภาษาไทย | Thai Exam Camera Assistant V3",
   "short_name": "ผู้ช่วยสอบไทย",
-  "description": "ถ่ายภาพโจทย์ อ่านคำถาม และค้นคำตอบจากเอกสารเรียน",
+  "description": "ถ่ายภาพโจทย์ อ่านคำถาม และค้นหาคำตอบจาก PDF โดยไม่ใช้ API",
   "lang": "th",
   "start_url": "./",
   "scope": "./",
@@ -14,14 +13,12 @@
     {
       "src": "assets/app-icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "assets/app-icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     }
   ]
 }

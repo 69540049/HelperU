@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "ผู้ช่วยสอบภาษาไทย | Thai Exam Camera Assistant",
+  "short_name": "ผู้ช่วยสอบไทย",
+  "description": "ถ่ายภาพโจทย์ อ่านคำถาม และค้นคำตอบจากเอกสารเรียน",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f7fb",
+  "theme_color": "#0878c9",
+  "icons": [
+    {
+      "src": "assets/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
